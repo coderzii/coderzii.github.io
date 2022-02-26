@@ -4,7 +4,7 @@
  */
 import { WorkWrapper } from "./styles";
 
-export default function () {
+export default function Work() {
     return (
         <WorkWrapper>
             <h1>work</h1>

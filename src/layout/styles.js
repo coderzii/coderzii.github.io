@@ -35,14 +35,19 @@ export const LayoutWrapper = styled.div`
             .header-logo {
                 flex: 1 1 auto;
                 margin: 0;
+                line-height: 25px;
 
-                .ziliang,
-                .he {
-                    transition: all 0.25s;
+                .header-logo__link {
                     font-size: 25px;
                     font-family: Archivo Black;
                     text-transform: uppercase;
                     text-decoration: none;
+                }
+
+                .ziliang,
+                .he {
+                    transition: all 0.25s;
+
                     cursor: pointer;
 
                     &.active {
@@ -58,7 +63,16 @@ export const LayoutWrapper = styled.div`
                 font-family: Andale Mono;
                 transition: all 0.25s;
 
-                .header-nav__link {
+                > a {
+                    margin-left: 24px;
+                    transition: all 0.25s;
+                    text-decoration: none;
+                }
+                > a:hover {
+                    filter: none !important;
+                }
+
+                /*.header-nav__link {
                     margin-left: 24px;
                     filter: blur(1.5px);
                     color: inherit;
@@ -71,7 +85,7 @@ export const LayoutWrapper = styled.div`
                 .header-nav__link.active,
                 .header-nav__link:hover {
                     filter: none;
-                }
+                }*/
             }
         }
 
