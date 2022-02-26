@@ -179,8 +179,14 @@ export const LayoutWrapper = styled.div`
                     transform: translateX(3px) rotate(-45deg);
                 }
 
+                .header-menu--open + .header-nav {
+                    opacity: 1;
+                    pointer-events: initial;
+                }
+
                 .header-nav {
                     opacity: 0;
+                    pointer-events: none;
                     position: fixed;
                     display: flex;
                     flex-direction: column;
@@ -192,6 +198,11 @@ export const LayoutWrapper = styled.div`
                     height: 100vh;
                     z-index: 5;
                     background: #fff;
+                    > a {
+                        font-size: 25px;
+                        margin-left: 0 !important;
+                    }
+
                     > a:not(:last-child) {
                         margin-bottom: 40px;
                     }

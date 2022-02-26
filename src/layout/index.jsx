@@ -68,17 +68,7 @@ export default function Layout() {
                             <span className="header-menu__line"></span>
                             <span className="header-menu__line"></span>
                         </figure>
-                        <div
-                            className="header-nav"
-                            style={
-                                showMenu
-                                    ? {
-                                          opacity: 1,
-                                          PointerEvents: "none",
-                                      }
-                                    : null
-                            }
-                        >
+                        <div className="header-nav">
                             <CustomLink
                                 to="/projects"
                                 onClick={() => setShowMenu(false)}
