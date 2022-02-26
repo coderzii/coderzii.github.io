@@ -8,13 +8,14 @@ import p1 from "../../../assets/images/p-1.jpg";
 export const ProjectsListWrapper = styled.div``;
 
 export const ProjectItemWrapper = styled.div.attrs(({ index }) => ({
-    isOdd: index % 2 === 0,
+    isEven: index % 2 === 0,
 }))`
     .section {
         display: flex;
         margin-bottom: 36px;
         text-decoration: none;
         color: inherit;
+        cursor: pointer;
 
         .line {
             position: absolute;
@@ -24,30 +25,32 @@ export const ProjectItemWrapper = styled.div.attrs(({ index }) => ({
 
         .line1 {
             top: -8px;
-            left: -8px;
+            right: ${({ isEven }) => (isEven ? "auto" : "-8px")};
+            left: ${({ isEven }) => (isEven ? "-8px" : "auto")};
             width: 100px;
             height: 1px;
         }
         .line2 {
             top: -8px;
-            left: -8px;
+            right: ${({ isEven }) => (isEven ? "auto" : "-8px")};
+            left: ${({ isEven }) => (isEven ? "-8px" : "auto")};
             width: 1px;
             height: 50px;
         }
 
         .line3 {
             bottom: -5px;
-            left: ${({ isOdd }) => (isOdd ? "-5px" : "0px")};
-            right: ${({ isOdd }) => (isOdd ? "0px" : "-5px")};
+            left: ${({ isEven }) => (isEven ? "auto" : "5px")};
+            right: ${({ isEven }) => (isEven ? "5px" : "auto")};
             width: 50px;
             height: 1px;
         }
 
         .section-image {
             margin-left: 0px;
-            margin-right: ${({ isOdd }) => (isOdd ? "16px" : "0px")};
-            margin-left: ${({ isOdd }) => (isOdd ? "0px" : "16px")};
-            order: ${({ isOdd }) => (isOdd ? 0 : 1)};
+            margin-right: ${({ isEven }) => (isEven ? "16px" : "0px")};
+            margin-left: ${({ isEven }) => (isEven ? "0px" : "16px")};
+            order: ${({ isEven }) => (isEven ? 0 : 1)};
             filter: none;
             background-color: rgb(243, 243, 243);
             background-image: url(${p1});
@@ -63,7 +66,7 @@ export const ProjectItemWrapper = styled.div.attrs(({ index }) => ({
         }
 
         .section-text {
-            text-align: ${({ isOdd }) => (isOdd ? "left" : "right")};
+            text-align: ${({ isEven }) => (isEven ? "left" : "right")};
             .section-text__title {
                 margin-bottom: 12px;
                 font-size: 20px;
@@ -95,6 +98,26 @@ export const ProjectItemWrapper = styled.div.attrs(({ index }) => ({
         }
         .line3 {
             width: 60px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .section {
+            display: block;
+
+            .section-image {
+                width: 100%;
+                max-width: none;
+                height: 200px;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+            .section-text {
+                text-align: left !important;
+                .section-text__title {
+                    margin-top: 16px;
+                }
+            }
         }
     }
 `;

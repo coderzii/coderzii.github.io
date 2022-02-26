@@ -7,7 +7,7 @@ import { WorkWrapper } from "./styles";
 export default function Work() {
     return (
         <WorkWrapper>
-            <h1>work</h1>
+            <p>fontend engineer</p>
         </WorkWrapper>
     );
 }

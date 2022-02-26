@@ -4,7 +4,7 @@
  */
 import { LayoutWrapper } from "./styles";
 import { useNavigate, Outlet, useLocation } from "react-router";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import CustomLink from "../components/CustomeLink";
 
@@ -13,7 +13,16 @@ export default function Layout() {
 
     const [logoTransform, setLogoTransform] = useState(false);
 
+    const [showMenu, setShowMenu] = useState(false);
+
     const onMouseEnterAndLeave = () => setLogoTransform(!logoTransform);
+
+    const customeNavigate = (path) => {
+        setShowMenu(false);
+        navigate(path);
+    };
+
+    const onClickMenu = () => setShowMenu(!showMenu);
 
     return (
         <LayoutWrapper>
@@ -22,7 +31,7 @@ export default function Layout() {
                     <header className="header-inner">
                         <h1
                             className="header-logo"
-                            onClick={() => navigate("/")}
+                            onClick={() => customeNavigate("/")}
                         >
                             <a className="header-logo__link">
                                 <span
@@ -48,9 +57,40 @@ export default function Layout() {
                                 </span>
                             </a>
                         </h1>
-                        <div className="header-nav">
-                            <CustomLink to="/projects">projects</CustomLink>
-                            <CustomLink to="/work">work</CustomLink>
+                        <figure
+                            className={[
+                                "header-menu",
+                                showMenu ? "header-menu--open" : null,
+                            ].join(" ")}
+                            onClick={onClickMenu}
+                        >
+                            <span className="header-menu__line"></span>
+                            <span className="header-menu__line"></span>
+                            <span className="header-menu__line"></span>
+                        </figure>
+                        <div
+                            className="header-nav"
+                            style={
+                                showMenu
+                                    ? {
+                                          opacity: 1,
+                                          PointerEvents: "none",
+                                      }
+                                    : null
+                            }
+                        >
+                            <CustomLink
+                                to="/projects"
+                                onClick={() => setShowMenu(false)}
+                            >
+                                projects
+                            </CustomLink>
+                            <CustomLink
+                                to="/work"
+                                onClick={() => setShowMenu(false)}
+                            >
+                                work
+                            </CustomLink>
                         </div>
                     </header>
                 </div>
