@@ -2,15 +2,17 @@
  * @Date: 2022-02-25
  * @Description:
  */
+import { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { ProjectsDetailWrapper } from "./styles";
+import { Markdown } from "../../../components/Markdown";
 
 export default function ProjectsDetai() {
     const params = useParams();
-    const { pid } = params;
+    const { id } = params;
     return (
         <ProjectsDetailWrapper>
-            <h3>pid : {pid}</h3>
+            <Markdown id={id} />
         </ProjectsDetailWrapper>
     );
 }

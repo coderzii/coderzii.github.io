@@ -24,16 +24,4 @@ export const HomeWrapper = styled.div`
         font-size: 12.8px;
         line-height: 1.5;
     }
-
-    .markdown-body {
-        .markdown-body {
-            color: #24292e;
-            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica,
-                Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji,
-                Segoe UI Symbol;
-            font-size: 16px;
-            line-height: 1.5;
-            word-wrap: break-word;
-        }
-    }
 `;

@@ -225,5 +225,9 @@ export const LayoutWrapper = styled.div`
                 }
             }
         }
+
+        .markdown-body {
+            /*font-family: Andale Mono !important;*/
+        }
     }
 `;

@@ -4,10 +4,12 @@
  */
 import { WorkWrapper } from "./styles";
 
+import { Markdown } from "../../components/Markdown";
+
 export default function Work() {
     return (
         <WorkWrapper>
-            <p>fontend engineer</p>
+            <Markdown id="w" />
         </WorkWrapper>
     );
 }

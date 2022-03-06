@@ -4,6 +4,8 @@
  */
 import { HomeWrapper } from "./styles";
 
+import { Markdown } from "../../components/Markdown";
+
 export default function Home() {
     return (
         <HomeWrapper>
@@ -14,8 +16,8 @@ export default function Home() {
                     style={{ left: "-5px", width: "50px", height: "1px" }}
                 ></figure>
             </h1>
-            <div className="page-content markdown-body">
-                <p> Hey. I'm Ziliang He.</p>
+            <div className="page-content">
+                <Markdown id="m" />
             </div>
         </HomeWrapper>
     );

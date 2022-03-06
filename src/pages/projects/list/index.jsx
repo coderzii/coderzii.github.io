@@ -9,14 +9,17 @@ import { useNavigate } from "react-router";
 export default function ProjectsList() {
     const navigate = useNavigate();
 
-    const onClickProjectItem = (pid) => {
-        navigate(`/projects/${pid}`);
+    const onClickProjectItem = (id) => {
+        navigate(`/projects/${id}`);
     };
 
     return (
         <ProjectsListWrapper>
             <ProjectItemWrapper index={0}>
-                <div className="section" onClick={() => onClickProjectItem(0)}>
+                <div
+                    className="section"
+                    onClick={() => onClickProjectItem("p1")}
+                >
                     <figure className="section-image">
                         <figure className="line line1"></figure>
                         <figure className="line line2"></figure>
@@ -39,7 +42,10 @@ export default function ProjectsList() {
                 </div>
             </ProjectItemWrapper>
             <ProjectItemWrapper index={1}>
-                <div className="section" onClick={() => onClickProjectItem(1)}>
+                <div
+                    className="section"
+                    onClick={() => onClickProjectItem("p2")}
+                >
                     <figure className="section-image">
                         <figure className="line line1"></figure>
                         <figure className="line line2"></figure>
@@ -62,7 +68,10 @@ export default function ProjectsList() {
                 </div>
             </ProjectItemWrapper>
             <ProjectItemWrapper index={2}>
-                <div className="section" onClick={() => onClickProjectItem(2)}>
+                <div
+                    className="section"
+                    onClick={() => onClickProjectItem("p3")}
+                >
                     <figure className="section-image">
                         <figure className="line line1"></figure>
                         <figure className="line line2"></figure>
@@ -85,7 +94,10 @@ export default function ProjectsList() {
                 </div>
             </ProjectItemWrapper>
             <ProjectItemWrapper index={3}>
-                <div className="section" onClick={() => onClickProjectItem(3)}>
+                <div
+                    className="section"
+                    onClick={() => onClickProjectItem("p4")}
+                >
                     <figure className="section-image">
                         <figure className="line line1"></figure>
                         <figure className="line line2"></figure>
