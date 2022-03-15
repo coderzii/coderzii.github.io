@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.64938a4b.css",
+    "main.js": "/static/js/main.30744788.js",
+    "static/media/AndaleMono.otf": "/static/media/AndaleMono.41f364711e7721ea7b63.otf",
+    "static/media/p-1.jpg": "/static/media/p-1.1c3647fa51b4bf87d62d.jpg",
+    "static/media/ArchivoBlack.woff2": "/static/media/ArchivoBlack.fc847a1f8d3d31390e0a.woff2",
+    "static/media/w.md": "/static/media/w.45502ee505d75bf96182.md",
+    "index.html": "/index.html",
+    "static/media/m.md": "/static/media/m.beb0af661a6b5773d3a6.md",
+    "static/media/p1.md": "/static/media/p1.be34bd1911adbfd96d8a.md",
+    "static/media/p2.md": "/static/media/p2.8ada77769aa7b1128366.md",
+    "static/media/p3.md": "/static/media/p3.df3ee2443727207d98f6.md",
+    "main.64938a4b.css.map": "/static/css/main.64938a4b.css.map",
+    "main.30744788.js.map": "/static/js/main.30744788.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64938a4b.css",
+    "static/js/main.30744788.js"
+  ]
+}
