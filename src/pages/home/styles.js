@@ -24,4 +24,12 @@ export const HomeWrapper = styled.div`
         font-size: 12.8px;
         line-height: 1.5;
     }
+
+    .page-footer {
+        margin-top: 16px;
+        .github-logo img {
+            width: 32px;
+            height: 32px;
+        }
+    }
 `;

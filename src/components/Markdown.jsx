@@ -43,7 +43,7 @@ export function Markdown(props) {
 
     const mdFile = markdownMap.get(`${id}`);
 
-    console.log("idid=>", id);
+    //console.log("idid=>", id);
 
     useEffect(() => {
         //fetch("/doc/help.md");
