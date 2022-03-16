@@ -53,7 +53,10 @@ export const ProjectItemWrapper = styled.div.attrs(({ index }) => ({
             order: ${({ isEven }) => (isEven ? 0 : 1)};
             filter: none;
             background-color: rgb(243, 243, 243);
-            background-image: url(${p1});
+            background-image: url(${({ p }) => p});
+            background-position: center center;
+            background-size: 60% auto;
+            background-repeat: no-repeat;
 
             /* c */
             position: relative;
@@ -61,8 +64,8 @@ export const ProjectItemWrapper = styled.div.attrs(({ index }) => ({
             width: 68%;
             max-width: 447px;
             height: 276px;
-            background-size: cover;
-            background-position: 50%;
+            /*background-size: cover;*/
+            /*background-position: 50%;*/
         }
 
         .section-text {
@@ -77,8 +80,8 @@ export const ProjectItemWrapper = styled.div.attrs(({ index }) => ({
                 }
             }
             .section-text__description {
-                line-height: 1.5;
-                font-size: 12.8px;
+                line-height: 2;
+                font-size: 14px;
                 color: #9b9b9b;
                 -webkit-transition: all 0.25s;
                 transition: all 0.25s;

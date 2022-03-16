@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 
@@ -9,7 +11,10 @@ import ProjectsDetail from "./pages/projects/detail";
 import Work from "./pages/work";
 import NoMatch from "./pages/nomatch";
 
+import { printLog } from "./utils/screenlog.js";
+
 function App() {
+    useEffect(printLog, []);
     return (
         <Routes>
             <Route path="/" element={<Layout />}>

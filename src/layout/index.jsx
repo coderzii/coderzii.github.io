@@ -94,10 +94,10 @@ export default function Layout() {
                         </div>
                     </div>
                     <div className="footer-nav">
-                        <a className="footer-nav__link">contact</a>
+                        {/*<a className="footer-nav__link">contact</a>
                         <a className="footer-nav__link">github</a>
                         <a className="footer-nav__link">dribbble</a>
-                        <a className="footer-nav__link">stack overflow</a>
+                        <a className="footer-nav__link">stack overflow</a>*/}
                     </div>
                 </div>
             </div>

@@ -31,8 +31,8 @@ export const MarkdownNavWrapper = styled.div`
 
 const markdownMap = new Map();
 markdownMap.set("p1", p1);
-markdownMap.set("p2", p1);
-markdownMap.set("p3", p1);
+markdownMap.set("p2", p2);
+markdownMap.set("p3", p3);
 markdownMap.set("w", w);
 markdownMap.set("m", m);
 
@@ -52,13 +52,13 @@ export function Markdown(props) {
             .then((txt) => {
                 setMd(txt);
             });
-        console.log("useEffect=>", md);
+        //console.log("useEffect=>", md);
     }, [md]);
     return (
         <>
-            <MarkdownNavWrapper className="markdown-nav">
+            {/*<MarkdownNavWrapper className="markdown-nav">
                 <MarkNav source={md} />
-            </MarkdownNavWrapper>
+            </MarkdownNavWrapper>*/}
             <ReactMarkdown
                 className="markdown-body"
                 children={md}
