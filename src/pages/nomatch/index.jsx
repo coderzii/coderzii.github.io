@@ -4,7 +4,7 @@
  */
 import { NoMatchWrapper } from "./styles";
 
-export default function () {
+export default function NoMatch() {
     return (
         <NoMatchWrapper>
             <h1>nomatch</h1>
