@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.64938a4b.css",
+    "main.js": "/static/js/main.3303f6e8.js",
+    "static/media/h5-index.png": "/static/media/h5-index.37662d74401d6097304d.png",
+    "static/media/AndaleMono.otf": "/static/media/AndaleMono.41f364711e7721ea7b63.otf",
+    "static/media/admin-logo2.png": "/static/media/admin-logo2.5802a79dc458275de132.png",
+    "static/media/p-1.jpg": "/static/media/p-1.1c3647fa51b4bf87d62d.jpg",
+    "static/media/ArchivoBlack.woff2": "/static/media/ArchivoBlack.fc847a1f8d3d31390e0a.woff2",
+    "static/media/p1.md": "/static/media/p1.458b191c722780600ec2.md",
+    "static/media/m.md": "/static/media/m.ec76f253776dd8635356.md",
+    "static/media/w.md": "/static/media/w.162bdf02e8f5a0e49a2b.md",
+    "index.html": "/index.html",
+    "static/media/p4.md": "/static/media/p4.46bf05c89f6fd99b55f8.md",
+    "static/media/p3.md": "/static/media/p3.e524241c0492e83cdcbc.md",
+    "static/media/p2.md": "/static/media/p2.75ca58a737d0d99642c2.md",
+    "main.64938a4b.css.map": "/static/css/main.64938a4b.css.map",
+    "main.3303f6e8.js.map": "/static/js/main.3303f6e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64938a4b.css",
+    "static/js/main.3303f6e8.js"
+  ]
+}
