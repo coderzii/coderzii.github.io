@@ -8,11 +8,11 @@ import { ProjectsDetailWrapper } from "./styles";
 import { Markdown } from "../../../components/Markdown";
 
 export default function ProjectsDetai() {
-    const params = useParams();
-    const { id } = params;
-    return (
-        <ProjectsDetailWrapper>
-            <Markdown id={id} />
-        </ProjectsDetailWrapper>
-    );
+  const params = useParams();
+  const { id } = params;
+  return (
+    <ProjectsDetailWrapper>
+      <Markdown id={id} />
+    </ProjectsDetailWrapper>
+  );
 }
